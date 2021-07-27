@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const movies=[
+        {movies:"tere naam", rating:5.6},
+        {movies:"hero", rating:9.5},
+        {movies:"jeet", rating:10.4},
+        {movies:"ranjha", rating:7.4},
+        {movies:"asprints", rating:9.4},
+        {movies:"jeene ka", rating:8.5},
+        {movies:"har", rating:8.5}
+    ];
+
+    const sortByRating= movies.sort(function(a,b){
+        if(a.rating>b.rating){
+            return -1
+        }else{
+            return 1
+        }
+    })
+    console.table(sortByRating);
+
+</script>
+</html>
